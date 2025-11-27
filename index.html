@@ -511,24 +511,43 @@
     <canvas id="starfield-canvas"></canvas>
 
     <!-- PRIVACY MODAL -->
-    <div id="privacy-modal">
-        <div class="privacy-content">
-            <button class="close-modal" onclick="togglePrivacy(false)">&times;</button>
-            <h2>Game Info & Privacy</h2>
-            
-            <h3>About The Game</h3>
-            <p><strong>Circuit Logic: Mastermind</strong> is a puzzle game inspired by "Lights Out".</p>
-            <p>The Goal: Turn all the lights ON (Green) to restore power to the system. Clicking a cell toggles itself and its adjacent neighbors (Up, Down, Left, Right).</p>
-            
-            <h3>Privacy Policy</h3>
-            <p>Your privacy is important to us.</p>
-            <ul>
-                <li><strong>Data Collection:</strong> We store your game progress (Coins, Unlocked Levels) and email in our secure database to allow you to login from different devices.</li>
-                <li><strong>Security:</strong> Passwords are encrypted and handled by Firebase Authentication.</li>
-            </ul>
-            <p style="font-size: 0.8rem; color: #666; margin-top: 20px;">Version 2.1 | Secure Firebase Login</p>
-        </div>
+    <div class="privacy-content">
+    <button class="close-modal" onclick="togglePrivacy(false)">&times;</button>
+    
+    <h2>Game Info & Privacy Policy</h2>
+    
+    <h3>About The Game</h3>
+    <p><strong>Circuit Logic: Mastermind</strong> is a puzzle game inspired by "Lights Out". The goal is to turn all lights Green to restore power.</p>
+    
+    <h3>Privacy Policy</h3>
+    <p>Your privacy is important to us. This app is designed as a safe and secure experience.</p>
+    
+    <ul style="padding-left: 20px; line-height: 1.6;">
+        <li>
+            <strong>Data Collection:</strong> We store your game progress (Coins, Levels) and Email ID in our secure Firebase database solely for the purpose of "Cloud Save" and "Cross-device Login".
+        </li>
+        <li style="margin-top: 10px;">
+            <strong>No Third-Party Sharing:</strong> We do not sell or share your personal data with third parties.
+        </li>
+        <li style="margin-top: 10px;">
+            <strong>Security:</strong> Passwords are encrypted and handled securely by Google Firebase Authentication.
+        </li>
+    </ul>
+
+    <!-- YE NEW SECTION HAI JO INDUS KO CHAHIYE -->
+    <div style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 10px; margin-top: 20px;">
+        <h3 style="margin-top: 0; color: #fff;">Developer Contact</h3>
+        <p style="margin-bottom: 5px; color: #ccc;">If you have any questions regarding this privacy policy or the game, please contact the developer:</p>
+        
+        <p style="margin: 5px 0;"><strong>Developer Name:</strong>Ravi Kumar</p>
+        <p style="margin: 5px 0;"><strong>Email:</strong> <a href="mailto:your.email@gmail.com" style="color: var(--primary);">raviaiagentassistant@gmail.com</a></p>
+        <!-- Apna asli email upar likhna mat bhoolna -->
     </div>
+    
+    <p style="font-size: 0.8rem; color: #666; margin-top: 30px; text-align: center; border-top: 1px solid #333; padding-top: 10px;">
+        Version 2.2 | Secure Firebase Login
+    </p>
+</div>
 
     <!-- LOGIN SCREEN -->
     <div id="login-screen" class="screen active">
